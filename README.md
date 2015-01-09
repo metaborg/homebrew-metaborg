@@ -14,4 +14,4 @@ instructions in their GitHub repository.
 
 If `brew install` complains that it has no compiler to use, try to
 pass one explicitly on the commandline, as in:
-```brew install strategoxt --cc=gcc-4.9`````
+```brew install strategoxt --cc=gcc-4.9```
