@@ -29,7 +29,7 @@ class Strategoxt < Formula
   end
 
   test do
-    system bin+"strategoxt"
+    system bin+"strj"
   end
 
 end
