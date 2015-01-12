@@ -3,6 +3,7 @@ require "formula"
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
   version "20140618"
+  revision 2
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
   sha1 "46764cbee62d932fdb040125348ee06000bbf028"
 
@@ -18,7 +19,7 @@ class Strategoxt < Formula
       "rtg2sig" => "run org.strategoxt.tools.main-rtg2sig",
       "sdf2parenthesize" => "run org.strategoxt.tools.main-sdf2parenthesize",
       "sdf2rtg" => "run org.strategoxt.tools.main-sdf2rtg",
-      "strj" => "-Xss8m -Xmx1024m run"
+      "strj" => "-Xss8m -Xmx1024m"
     }
     commands.each do |command,arguments|
       (bin+command).write <<-EOS.undent
