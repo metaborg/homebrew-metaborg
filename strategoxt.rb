@@ -8,7 +8,6 @@ class Strategoxt < Formula
 
   def install
     share.install Dir["share/*"]
-    puts Dir["share/lib*/*.jar"]
     commands = {
       "gen-renamed-sdf-module" => "run org.strategoxt.tools.main-gen-renamed-sdf-module",
       "gen-sdf-mix" => "run org.strategoxt.tools.main-gen-sdf-mix",
