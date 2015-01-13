@@ -17,6 +17,7 @@ class Strategoxt < Formula
       "gen-renamed-sdf-module" => "run org.strategoxt.tools.main-gen-renamed-sdf-module",
       "gen-sdf-mix" => "run org.strategoxt.tools.main-gen-sdf-mix",
       "pack-sdf" => "run org.strategoxt.tools.main-pack-sdf",
+      "pp-sdf" => "run org.strategoxt.tools.io-pp-sdf",
       "parse-pp-table" => "-Xss8m run org.strategoxt.tools.main-parse-pp-table",
       "parse-stratego" => "-Xss8m run org.strategoxt.tools.parse-stratego-io",
       "ppgen" => "run org.strategoxt.tools.main-ppgen",
