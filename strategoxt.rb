@@ -5,7 +5,7 @@ class Strategoxt < Formula
   version "20150113"
   revision 1
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
-  sha1 "46764cbee62d932fdb040125348ee06000bbf028"
+  sha1 "55248df9efe753b025286f4f7af3645b7e7f1a4f"
 
   def install
     share.install Dir["share/*"]
