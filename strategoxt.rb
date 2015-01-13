@@ -2,8 +2,8 @@ require "formula"
 
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
-  version "20140618"
-  revision 4
+  version "20150113"
+  revision 1
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
   sha1 "46764cbee62d932fdb040125348ee06000bbf028"
 
@@ -32,6 +32,8 @@ class Strategoxt < Formula
         exec java -cp #{share}/strategoxt/strategoxt/strategoxt.jar #{arguments} $@
       EOS
     end
+
+    bin.install Dir["share/macosx/*"]
   end
 
   test do
