@@ -3,9 +3,9 @@ require "formula"
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
   version "20150113"
-  revision 1
+  revision 2
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
-  sha1 "55248df9efe753b025286f4f7af3645b7e7f1a4f"
+  sha1 "dbf298d678398897413c7ef36d63b54d53a87b6b"
 
   def install
     share.install Dir["share/*"]
@@ -33,7 +33,7 @@ class Strategoxt < Formula
       EOS
     end
 
-    bin.install Dir["share/macosx/*"]
+    #bin.install Dir["share/macosx/*"]
   end
 
   test do
