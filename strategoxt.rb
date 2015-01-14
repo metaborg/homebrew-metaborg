@@ -3,7 +3,7 @@ require "formula"
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
   version "20150113"
-  revision 2
+  revision 3
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
   sha1 "dbf298d678398897413c7ef36d63b54d53a87b6b"
 
@@ -33,7 +33,7 @@ class Strategoxt < Formula
       EOS
     end
 
-    #bin.install Dir["share/macosx/*"]
+    bin.install Dir["share/strategoxt/macosx/*"]
   end
 
   test do
