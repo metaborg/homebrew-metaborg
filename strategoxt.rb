@@ -20,6 +20,7 @@ class Strategoxt < Formula
       "pp-sdf" => "run org.strategoxt.tools.io-pp-sdf",
       "parse-pp-table" => "-Xss8m run org.strategoxt.tools.main-parse-pp-table",
       "parse-stratego" => "-Xss8m run org.strategoxt.tools.parse-stratego-io",
+      "pp-stratego" => "-Xss8m run org.strategoxt.strc.io-pp-stratego",
       "ppgen" => "run org.strategoxt.tools.main-ppgen",
       "rtg2sig" => "run org.strategoxt.tools.main-rtg2sig",
       "sdf2parenthesize" => "run org.strategoxt.tools.main-sdf2parenthesize",
