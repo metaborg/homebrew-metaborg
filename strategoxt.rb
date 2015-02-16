@@ -3,7 +3,7 @@ require "formula"
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
   version "20150113"
-  revision 3
+  revision 4
   url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
   sha1 "dbf298d678398897413c7ef36d63b54d53a87b6b"
 
