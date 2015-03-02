@@ -2,10 +2,10 @@ require "formula"
 
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
-  version "20150113"
-  revision 4
-  url "https://github.com/metaborg/strategoxt/releases/download/baselines/baseline-#{version}/strategoxt-distrib.tar"
-  sha1 "dbf298d678398897413c7ef36d63b54d53a87b6b"
+  version "1.3.1"
+  revision 1
+  url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
+  sha1 "dfa0e136a20faba8b71168d719c365eb0fbd393d"
 
   def install
     share.install Dir["share/*"]
