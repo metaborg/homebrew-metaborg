@@ -2,13 +2,34 @@ require "formula"
 
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
-  version "1.3.1"
-  revision 1
-  url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
-  sha1 "dfa0e136a20faba8b71168d719c365eb0fbd393d"
+  version "1.4.0"
+  url "http://download.spoofax.org/update/artifacts/releases/org/metaborg/strategoxt-distrib/1.4.0/strategoxt-distrib-1.4.0-bin.tar"
+  sha1 "1032153f4e942482e8a9465231a07bf2c6122f31"
 
   def install
+    # the ordering is sensitive here, if you get this wrong,
+    # 'Warning: tried to install empty array to ...' will appear.
+    install_bin_natives
+    install_bin_scripts
+    install_share
+  end
+
+  def install_share
     share.install Dir["share/*"]
+  end
+
+  def install_bin_natives
+    case RbConfig::CONFIG['host_os']
+    when /darwin|mac os/
+      bin.install Dir["share/strategoxt/macosx/*"]
+    when /linux/
+      bin.install Dir["share/strategoxt/linux/*"]
+    else
+      opoo "Skipped sdf2table and implodePT, not supported on this platform."
+    end
+  end
+
+  def install_bin_scripts
     commands = {
       "pp-aterm" => "run org.strategoxt.stratego-aterm.io-pp-aterm",
       "explode-aterm" => "run org.strategoxt.stratego-aterm.io-explode-aterm",
@@ -33,8 +54,6 @@ class Strategoxt < Formula
         exec java -cp #{share}/strategoxt/strategoxt/strategoxt.jar #{arguments} $@
       EOS
     end
-
-    bin.install Dir["share/strategoxt/macosx/*"]
   end
 
   test do
