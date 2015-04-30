@@ -3,7 +3,8 @@ require "formula"
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
   version "1.4.0"
-  url "http://download.spoofax.org/update/artifacts/releases/org/metaborg/strategoxt-distrib/1.4.0/strategoxt-distrib-1.4.0-bin.tar"
+  revision 1
+  url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha1 "1032153f4e942482e8a9465231a07bf2c6122f31"
 
   def install
