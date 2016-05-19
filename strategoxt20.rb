@@ -8,7 +8,7 @@ class Strategoxt20 < Formula
   url "http://artifacts.metaborg.org/service/local/repositories/snapshots/content/org/metaborg/strategoxt-distrib/#{@@baseVersion}-SNAPSHOT/strategoxt-distrib-#{version}-bin.tar"
   sha256 "dfaae5b82ddf898d22307ddc15893d4deb9aafa3848758dfb9228b58039bca55"
 
-  conflicts_with "strategoxt", :because => "Cannot install multiple Strattego/XT versions."
+  conflicts_with "strategoxt", :because => "Different Stratego/XT version already installed."
 
   def install
     # the ordering is sensitive here, if you get this wrong,

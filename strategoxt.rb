@@ -6,16 +6,14 @@ class Strategoxt < Formula
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "b61a31f0b643a4cded06ec552b53416bc761ff3bd0cdb23291716abe883a3fd6"
 
+  conflicts_with "strategoxt20", :because => "Different Stratego/XT version already installed."
+
   def install
     # the ordering is sensitive here, if you get this wrong,
     # 'Warning: tried to install empty array to ...' will appear.
     install_bin_natives
     install_bin_scripts
     install_share
-  end
-
-  def install_share
-    share.install Dir["share/*"]
   end
 
   def install_bin_natives
@@ -54,6 +52,10 @@ class Strategoxt < Formula
         exec java -cp #{share}/strategoxt/strategoxt/strategoxt.jar #{arguments} $@
       EOS
     end
+  end
+
+  def install_share
+    share.install Dir["share/*"]
   end
 
   test do
