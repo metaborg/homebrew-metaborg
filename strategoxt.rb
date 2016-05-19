@@ -2,10 +2,9 @@ require "formula"
 
 class Strategoxt < Formula
   homepage "http://metaborg.org/stratego/"
-  version "1.4.0"
-  revision 1
+  version "1.4.2"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
-  sha1 "1032153f4e942482e8a9465231a07bf2c6122f31"
+  sha256 "b61a31f0b643a4cded06ec552b53416bc761ff3bd0cdb23291716abe883a3fd6"
 
   def install
     # the ordering is sensitive here, if you get this wrong,
