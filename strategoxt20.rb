@@ -4,9 +4,9 @@ class Strategoxt20 < Formula
   desc "Stratego/XT Commandline Tools (Unstable)"
   homepage "http://metaborg.org/stratego/"
   @@baseVersion = "2.0.0"
-  version "#{@@baseVersion}-20160520.101344-136"
+  version "#{@@baseVersion}-20160630.164302-224"
   url "http://artifacts.metaborg.org/service/local/repositories/snapshots/content/org/metaborg/strategoxt-distrib/#{@@baseVersion}-SNAPSHOT/strategoxt-distrib-#{version}-bin.tar"
-  sha256 "afc8672e8499e8896d0c1c9ee5f95aa6a402815ca1c26532dc58ddb7c5829faa"
+  sha256 "7cab2631fa1524d2ecf1c4a276ef0b8669a5971c42967d410594158f4e7a1925"
 
   conflicts_with "strategoxt", :because => "Different Stratego/XT version already installed."
 
