@@ -5,7 +5,9 @@ class StrategoxtAT14 < Formula
   version "1.4.2"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "b61a31f0b643a4cded06ec552b53416bc761ff3bd0cdb23291716abe883a3fd6"
-  revision 1
+  revision 2
+
+  keg_only :versioned_formula
 
   def install
     # the ordering is sensitive here, if you get this wrong,

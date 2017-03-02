@@ -6,7 +6,9 @@ class StrategoxtAT20 < Formula
   version "2.0.0"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "9f042924eb5a47ae3a1bba6f564b7c607dc2f6ec45689503b59d7880da91a17a"
-  revision 1
+  revision 2
+
+  keg_only :versioned_formula
 
   def install
     # the ordering is sensitive here, if you get this wrong,
