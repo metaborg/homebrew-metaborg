@@ -1,14 +1,12 @@
 require "formula"
 
-class Strategoxt < Formula
+class StrategoxtAT20 < Formula
   desc "Stratego/XT Commandline Tools"
   homepage "http://metaborg.org/stratego/"
-  version "2.1.0"
+  version "2.0.0"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
-  sha256 "2687dccca10bb38823c7f96c68d432ba57e2ddf9e848fe0ecf5b10aef51161a8"
+  sha256 "9f042924eb5a47ae3a1bba6f564b7c607dc2f6ec45689503b59d7880da91a17a"
   revision 1
-
-  conflicts_with "strategoxt14", :because => "Different Stratego/XT version already installed."
 
   def install
     # the ordering is sensitive here, if you get this wrong,
