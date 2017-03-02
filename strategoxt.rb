@@ -6,9 +6,9 @@ class Strategoxt < Formula
   version "2.1.0"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "2687dccca10bb38823c7f96c68d432ba57e2ddf9e848fe0ecf5b10aef51161a8"
-  revision 1
+  revision 2
 
-  conflicts_with "strategoxt14", :because => "Different Stratego/XT version already installed."
+  depends_on :java
 
   def install
     # the ordering is sensitive here, if you get this wrong,
