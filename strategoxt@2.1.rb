@@ -1,6 +1,6 @@
 require "formula"
 
-class Strategoxt < Formula
+class StrategoxtAT21 < Formula
   desc "Stratego/XT Commandline Tools"
   homepage "http://metaborg.org/stratego/"
   version "2.1.0"
