@@ -2,10 +2,10 @@ require "formula"
 
 class Strategoxt < Formula
   desc "Stratego/XT Commandline Tools"
-  homepage "http://metaborg.org/stratego/"
-  version "2.2.0"
+  homepage "http://metaborg.org/"
+  version "2.2.1"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
-  sha256 "d42389cde82bf49e2b63c1c0167b2b59e371e162e1b683de8888b608dae1cdee"
+  sha256 "a0429e8ecbbb2d0b1cf2155315e4eea9049b3925a171b3dc549d59e6f0caf25b"
 
   depends_on :java
 
