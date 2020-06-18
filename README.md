@@ -1,9 +1,12 @@
 # MetaBorg Homebrew Tap
 
-To install MetaBorg formulas with Homebrew, add this tap with ```brew tap
-metaborg/homebrew-metaborg```.
+To install MetaBorg formulas with Homebrew, add this tap with
 
-Now install Stratego/XT with ```brew install strategoxt```
+    brew tap metaborg/metaborg
+
+Now install Stratego/XT with
+
+    brew install strategoxt
 
 ## Notes for Linux
 
