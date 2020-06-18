@@ -6,5 +6,5 @@ cask 'spoofax-nightly' do
   name 'Spoofax'
   homepage 'https://www.metaborg.org/'
 
-  app 'spoofax.app'
+  app 'spoofax.app', target: 'spoofax-nightly.app'
 end
