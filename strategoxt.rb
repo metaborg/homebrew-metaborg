@@ -3,9 +3,9 @@ require "formula"
 class Strategoxt < Formula
   desc "Stratego/XT Commandline Tools"
   homepage "http://metaborg.org/"
-  version "2.5.7"
+  version "2.5.9"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
-  sha256 "0e9b4ddc3cb1fe79e1de568819747b97340bc6bc5cefe24245bba1988b8f5451"
+  sha256 "4ec1c4b942cd6ead521b2bbc6a6dc7b6f5e54ef7022ce150f78e359518d64a43"
 
   depends_on :java
 
