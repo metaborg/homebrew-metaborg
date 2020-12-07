@@ -7,7 +7,7 @@ class Strategoxt < Formula
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "ffb9eb4784e633da3a27cba72655e49f8667f8936eeeea7f86e263255748fad6"
 
-  depends_on :openjdk
+  depends_on :openjdk@8
 
   def install
     # the ordering is sensitive here, if you get this wrong,
