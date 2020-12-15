@@ -9,6 +9,8 @@ class StrategoxtAT23 < Formula
   sha256 "eda10a5565f32447c320ad0cf9500c74bdbb834fe57081a8e9fe3ff45226c397"
   revision 1
 
+  keg_only :versioned_formula
+
   depends_on "openjdk"
 
   def install
