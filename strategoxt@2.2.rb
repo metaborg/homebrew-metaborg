@@ -3,11 +3,13 @@ require "formula"
 class StrategoxtAT22 < Formula
   desc "Stratego/XT Commandline Tools"
   homepage "http://metaborg.org/"
+  license "Apache-2.0"
   version "2.2.1"
   url "http://artifacts.metaborg.org/service/local/repositories/releases/content/org/metaborg/strategoxt-distrib/#{version}/strategoxt-distrib-#{version}-bin.tar"
   sha256 "a0429e8ecbbb2d0b1cf2155315e4eea9049b3925a171b3dc549d59e6f0caf25b"
+  revision 1
 
-  depends_on :java
+  depends_on "openjdk"
 
   def install
     # the ordering is sensitive here, if you get this wrong,
